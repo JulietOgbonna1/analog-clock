@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.863);
 }
 .number {
   text-align: center;
@@ -66,14 +67,14 @@ body {
 }
 
 .minute-hand {
-  width: 10px;
+  width: 8px;
   height: 160px;
   background: #aaa;
 }
 
 .second-hand {
   height: 180px;
-  width: 6px;
+  width: 3px;
   background: red;
 }
 
