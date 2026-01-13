@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+.clock {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  transform: rotate(calc(30deg * var(--n)));
+  position: absolute;
+  inset: 20px;
+}
+
+.number b{
+  transform: rotate(calc(-30deg * var(--n)));
+  display: inline-block;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: white;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s ease-in-out;
+}
+
+.hour-hand, .minute-hand, .second-hand{
+  --rotate: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%) rotate(calc(var(--rotate)));
+  transform-origin: bottom;
+  
+}
+
+.hour-hand{
+  width: 12px;
+  height: 130px;
+  background: #fff;
+}
+
+.minute-hand {
+  width: 10px;
+  height: 160px;
+  background: #aaa;
+}
+
+.second-hand {
+  height: 180px;
+  width: 6px;
+  background: red;
+}
+
+.center-dot {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: red;
+  border-radius: 50%;
+}
+
