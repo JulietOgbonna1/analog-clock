@@ -86,3 +86,35 @@ body {
   border-radius: 50%;
 }
 
+@media (max-width: 480px) {
+  .clock {
+    width: 300px;
+    height: 300px;
+  }
+
+  .number {
+    font-size: 1.2rem;
+  }
+
+  .hour-hand {
+    width: 8px;
+    height: 80px;
+  }
+
+  .minute-hand {
+    width: 5px;
+    height: 100px;
+  }
+
+  .second-hand {
+    width: 2px;
+    height: 120px;
+  }
+
+  .center-dot {
+    width: 15px;
+    height: 15px;
+  }
+} 
+
+
